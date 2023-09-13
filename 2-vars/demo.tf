@@ -37,6 +37,6 @@ variable "sample_list" {
     ]
 }
 
-output "Print list" {
-    value ="Welcome to ${var.sample_list[0]}" and the batch ${var.sample_list[1]}, batch timings are ${var.sample_list[3]}
+output "Print_list" {
+    value = "Welcome to ${var.sample_list[0]} training and the batch ${var.sample_list[1]}, batch timings are ${var.sample_list[3]}"
 }
