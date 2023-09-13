@@ -11,7 +11,6 @@ output "op" {
 }
 
 # whenever you want to print a variable in the group of words, you need to use bash syntax
-
 output "ops" {
     value = My first message is ${var.sample}"
 }
@@ -24,6 +23,5 @@ variable "number" {
 }
 
 output "op_number" {
-    value = var.op_number
-
-output 
+    value = var.number
+}
