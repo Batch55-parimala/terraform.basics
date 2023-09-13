@@ -6,11 +6,9 @@ variable "sample" {
 }
 
 # Printing an output
-'''''
 output "op" {
     value = var.sample
 }
-''''
 
 # whenever you want to print a variable in the group of words, you need to use bash syntax
 
