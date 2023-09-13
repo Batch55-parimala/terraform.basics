@@ -29,7 +29,7 @@ output "op_number" {
 
 # Declaring a list variable
 variable "sample_list" {
-    Default = [
+    default = [
         "Devops",
         55,
         "Parimala",
@@ -37,6 +37,6 @@ variable "sample_list" {
     ]
 }
 
-output "Print_list" {
+output "print_list" {
     value = "Welcome to ${var.sample_list[0]} training and the batch ${var.sample_list[1]}, batch timings are ${var.sample_list[3]}"
 }
