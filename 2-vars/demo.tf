@@ -24,5 +24,6 @@ variable "number" {
 }
 
 output "op_number" {
-    value = var.number
-}
+    value = var.op_number
+
+output 
