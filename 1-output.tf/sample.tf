@@ -1,5 +1,6 @@
 
 output "sample" {
-    value = "Hello world"
+    value = "Welcome to terraform learning"
 }
+
 
