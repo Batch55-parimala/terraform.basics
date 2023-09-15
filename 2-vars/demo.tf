@@ -40,3 +40,39 @@ variable "sample_list" {
 output "print_list" {
     value = "Welcome to ${var.sample_list[0]} training and the batch ${var.sample_list[1]}, batch timings are ${var.sample_list[3]}"
 }
+
+# Printing a map variable
+output "sample_map_op" {
+    value = "${var.sample_map["Training"]} has great scope of opportunites and this is complete ${var.sample_map["Mode"]} Training"
+}
+
+##########################  Declaring an empty variable and passing the value in the *.tfvars file #########################
+variable "city" {}
+
+output "city_name" {
+    value = "Name of the city is ${var.city}"
+}
+
+variable "state" {}
+
+output "state_name" {
+    value  = var.state
+}
+
+variable "country" {}
+
+output "country_name" {
+    value = "Name Of our country is ${var.country}"
+}
+
+variable "states" {}
+
+output "states_count" {
+    value  = "Toatl number of states in Bharat is ${var.states}"
+}
+
+variable "fav_cloud" {}
+
+output "fav_cloud_op" {
+    value  = "My favorite cloud is ${var.fav_cloud}"
+}
