@@ -41,12 +41,22 @@ output "print_list" {
     value = "Welcome to ${var.sample_list[0]} training and the batch ${var.sample_list[1]}, batch timings are ${var.sample_list[3]}"
 }
 
+# Declaring a Map Variable
+variable "sample_map" {
+    default = {
+        batch    = "b55"
+        Mode     = "Online"
+        Training = "DevOpsWithAWS"
+    }
+}          
+
 # Printing a map variable
 output "sample_map_op" {
     value = "${var.sample_map["Training"]} has great scope of opportunites and this is complete ${var.sample_map["Mode"]} Training"
 }
 
 ##########################  Declaring an empty variable and passing the value in the *.tfvars file #########################
+
 variable "city" {}
 
 output "city_name" {
