@@ -23,4 +23,16 @@ With Terraform, you can define the desired state of your infrastructure using a 
     
 # How to supply variables from the command line ? use -var city=delhi
 
-    $  terraform plan -var-file=dev.tfvars  -var states=28
+    $  terraform plan -var-file=dev.tfvars  -var states=28#
+    
+# Attribute vs Argument in Terraform
+Argument : This comes up as a part of the resource creation! This is to define properties to the resource you're creating.
+
+argument example : 
+                    ami , security_group , key_name
+attribute : These are the properties of the resource which will only be available after the resource creation only
+
+Attribute example : 
+                    private_ip, vm_id, network_attributes
+# You cannot create either an attibute nor an argument. You just need to stick to the provider documentation.
+
